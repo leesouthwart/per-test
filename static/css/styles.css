@@ -1,0 +1,125 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+body {
+    font-family: 'Roboto', 'Sans-Serif';
+}
+
+
+
+
+/* nav styles */
+
+.navbar {
+    padding: 20px;
+}
+
+.navbar-styles {
+    background-color: white;
+    
+}
+
+.navbar-nav {
+    margin-left:100px;
+}
+
+
+
+.nav-item {
+    font-weight: 500;
+    margin-right: 25px;
+    border-bottom: 3px solid white; /*set a white bb to not interfere with text placement when hovering */
+    transition: 0.1s ease-in-out;
+}
+
+.nav-item:hover {
+    color:#212529;    
+    border-bottom: 3px solid #808080;
+    
+}
+
+/* overriding text colours specified in navbar-light */
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#212529;
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+}
+
+
+/* hero-image styles */
+
+.hero-image {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 65%,rgba(255,255,255,0.2) 74%,rgba(255,255,255,0.5) 94%,rgba(255,255,255,1) 100%),
+    url('/assets/background.jpg');
+    
+    height:50%;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+.hero-text {
+    position:relative;
+    float:left;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+}
+
+.card-section {
+    background-color: white;
+    height: 50vh;
+}
+
+.card {
+    background-color:white;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    box-shadow: 0px 7px 26px -5px rgba(0,0,0,0.75);
+}
+
+.card-head {
+    height: 50px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.card-icons {
+    margin-left: 5%;    /* using 5% so it matches the <hr> */
+    margin-right: 5px;  /* on all screen sizes as the <hr> has a width of 90% */
+}
+
+.hr-red,
+.hr-green,
+.hr-blue {
+    width:90%;
+    align-self: center;
+}
+
+.hr-red {
+    background-color:red;
+}
+
+.hr-green {
+    background-color:green;
+}
+
+.hr-blue {
+    background-color:blue;
+}
+
+.btn-primary {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
